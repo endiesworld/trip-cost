@@ -1,7 +1,9 @@
 const express = require("express") ;
 const { MongoClient } = require("mongodb") ; 
 
-const myCluster_uri = 'mongodb+srv://m001-student:m001-mongodb-basics@sandbox.89gos.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' ;
+const username = "putDataBaseUserNameHere" ;
+const password = "putDataBasePasswordHere" ;
+const myCluster_uri = `mongodb+srv://${username}:${password}@sandbox.89gos.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` ;
 
 let db, trips, expenses ;
 
